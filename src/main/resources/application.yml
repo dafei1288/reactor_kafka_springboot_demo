@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: 172.18.70.184:9092
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      bootstrap-servers: 172.18.70.184:9092
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      group-id: warehouse-consumers
